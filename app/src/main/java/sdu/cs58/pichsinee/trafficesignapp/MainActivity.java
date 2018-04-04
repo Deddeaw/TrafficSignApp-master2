@@ -1,7 +1,11 @@
 package sdu.cs58.pichsinee.trafficesignapp;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
@@ -26,9 +30,27 @@ public class MainActivity extends AppCompatActivity {
         titleStrings = getResources().getStringArray(R.array.title);
         detailStrings = getResources().getStringArray(R.array.detail);
 
-        MyAdapter myAdapter = new MyAdapter(MainActivity.this, ints, titleStrings, detailStrings);
+        MyAdapter myAdapter = new MyAdapter(MainActivity.this, ints, titleStrings, detailStrings); //รูปภาพ , หัวข้อ , รายละเอียด
         listView.setAdapter(myAdapter);
 
+        //เมื่อคลิกแต่ละ Item ใน listview จะเชื่อมโยงไปยังหน้า Detail
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent detailIntent = new Intent(MainActivity.this, DetailActivity.class);
+                detailIntent.putExtra("Title",titleStrings[i]);
+                detailIntent.putExtra("Detail", detailStrings[i]);
+                detailIntent.putExtra("Image", ints[i]);
+                startActivity(detailIntent);
+            }
+        });
+
     }//end onCreate Method
+
+    public  void  clickLink(View view){
+        Intent linkIntent = new Intent(Intent.ACTION_VIEW);
+        linkIntent.setData(Uri.parse("https://www.dlt.go.th/th/"));
+        startActivity(linkIntent);
+    }//end clickLink method
 
 }//end Class

@@ -3,25 +3,25 @@
 
     <string-array name="title">
         <item>ห้ามเลี้ยวซ้าย</item>
-        <item>ข้อข้อ2</item>
-        <item>ข้อข้อ3</item>
-        <item>ข้อข้อ4</item>
-        <item>ข้อข้อ5</item>
-        <item>ข้อข้อ6</item>
-        <item>ข้อข้อ7</item>
-        <item>ข้อข้อ8</item>
-        <item>ข้อข้อ9</item>
-        <item>ข้อข้อ10</item>
-        <item>ข้อข้อ11</item>
-        <item>ข้อข้อ12</item>
-        <item>ข้อข้อ13</item>
-        <item>ข้อข้อ14</item>
-        <item>ข้อข้อ15</item>
-        <item>ข้อข้อ16</item>
-        <item>ข้อข้อ17</item>
-        <item>ข้อข้อ18</item>
-        <item>ข้อข้อ19</item>
-        <item>ข้อข้อ20</item>
+        <item>ข้อ2</item>
+        <item>ข้อ3</item>
+        <item>ข้อ4</item>
+        <item>ข้อ5</item>
+        <item>ข้อ6</item>
+        <item>ข้อ7</item>
+        <item>ข้อ8</item>
+        <item>ข้อ9</item>
+        <item>ข้อ10</item>
+        <item>ข้อ11</item>
+        <item>ข้อ12</item>
+        <item>ข้อ13</item>
+        <item>ข้อ14</item>
+        <item>ข้อ15</item>
+        <item>ข้อ16</item>
+        <item>ข้อ17</item>
+        <item>ข้อ18</item>
+        <item>ข้อ19</item>
+        <item>ข้อ20</item>
     </string-array>
 
     <string-array name="detail">
