@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ป้ายจราจรน่ารู้</string>
+    <string name="my_name">นาย เด็ดเดี่ยว มาทน</string>
+    <string name="my_major">หลักสูตรวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์และเทคโนโลยี</string>
+    <string name="my_university">มหาวิทยาลัยสวนดุสิต</string>
+    <string name="my_mobile">เบอร์โทรศัพท์ : 0948577771</string>
+    <string name="my_facrbook">facebook : https://www.facebook.com/deaw.deddeaw</string>
 </resources>

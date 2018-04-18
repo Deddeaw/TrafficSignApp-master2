@@ -47,10 +47,15 @@ public class MainActivity extends AppCompatActivity {
 
     }//end onCreate Method
 
-    public  void  clickLink(View view){
+    public  void  clickLink(View view){//เชื่อมโยงลิ้งค์
         Intent linkIntent = new Intent(Intent.ACTION_VIEW);
         linkIntent.setData(Uri.parse("https://www.dlt.go.th/th/"));
         startActivity(linkIntent);
     }//end clickLink method
 
+    public void clickAboutMe(View view) {
+        Intent aboutmeIntent = new Intent(MainActivity.this,AboutMeActivity.class);
+        startActivity(aboutmeIntent);
+
+    }//end clickAboutMe method
 }//end Class
